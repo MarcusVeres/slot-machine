@@ -4,7 +4,7 @@
     console.log("loaded scripts");
 
     // vars
-    var recipes = 'unset';
+    var recipes = null;
 
 
     // get our recipe data
@@ -18,17 +18,31 @@
         {
             console.log( "the data is:" , data );
             recipes = data;
+            
+            // test the function
+            console.log( get_random_recipe());
         });
 
     };
 
 
+    // randomizer 
+    var get_random_recipe = function()
+    {
+        if( recipes ){
+            return recipes[ Math.floor( Math.random() * recipes.length ) ];
+        } 
+        alert("It appears that there are no recipes available.");
+        return {}
+    };
+
+
     // initialize everything before page load
-    function init()
+    (function init()
     {
         // populate the recipes variable
         get_recipes();
-    }
+    })();
 
 
     // page is ready
