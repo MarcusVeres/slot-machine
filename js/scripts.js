@@ -18,13 +18,9 @@
         {
             console.log( "the data is:" , data );
             recipes = data;
-            
-            // test the function
-            var recipe = get_random_recipe();
-            console.log( recipe );
 
-            // render the random recipe
-            render_recipe( recipe );
+            // test the data
+            spin();
 
         });
 
@@ -46,6 +42,14 @@
     var render_recipe = function( recipe )
     {
         $('#recipe-container').html( recipe.sku );
+    };
+
+
+    // "spin" the slot machine and display the random recipe
+    var spin = function()
+    {
+        var recipe = get_random_recipe();
+        render_recipe( recipe );
     };
 
 
