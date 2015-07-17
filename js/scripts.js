@@ -61,15 +61,42 @@
     {
         $('#recipe-title').css({'opacity':0});
         $('.blur-cover').show();
+
+        // move the items up (will be useful for the bounce at the end)
+        // $('.item').css({'margin-top': '-50px'});
+        $('.item').animate({
+            'marginTop': '-100px'
+        });
+
     };
 
     var hide_blur_covers = function()
     {
         // stagger the end of the blur
         var covers = $('.blur-cover');
-        window.setTimeout( function(){ $(covers[0]).hide(); } , 400 );
-        window.setTimeout( function(){ $(covers[1]).hide(); } , 800 );
-        window.setTimeout( function(){ $(covers[2]).hide(); } , 1600 );
+        var items = $('.item');
+        var anim_duration = 300;
+
+        window.setTimeout( function(){ 
+            $(covers[0]).hide(); 
+            $(items[0]).animate({
+                'marginTop': '0px'
+            }, anim_duration);
+        } , 400 );
+
+        window.setTimeout( function(){ 
+            $(covers[1]).hide(); 
+            $(items[1]).animate({
+                'marginTop': '0px'
+            }, anim_duration);
+        } , 800 );
+
+        window.setTimeout( function(){ 
+            $(covers[2]).hide(); 
+            $(items[2]).animate({
+                'marginTop': '0px'
+            }, anim_duration);
+        } , 1600 );
 
         // don't forget the title
         window.setTimeout( function(){
@@ -97,6 +124,9 @@
     // initialize everything before page load
     (function init()
     {
+        // set the easing type
+        jQuery.easing.def = "easeOutBounce";
+
         // populate the recipes variable
         get_recipes();
 
