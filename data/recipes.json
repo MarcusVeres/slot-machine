@@ -1,0 +1,73 @@
+[
+  {
+    "recipe":"Cinnamon Fruit Scoop",
+    "sku":"Tostitos¨ Scoops",
+    "ingredient_1":"Assorted seasonal fruit",
+    "ingredient_2":"Unmarked Container of Plain Yogurt",
+    "link":"http://tostitos.ca/recipes/creamy-cinnamon-fruit-scoops"
+  },
+  {
+    "recipe":"Jacked Up Salsa",
+    "sku":"Tostitos Medium Salsa",
+    "ingredient_1":"Avocado",
+    "ingredient_2":"Corn cob",
+    "link":"Beauty shot available, link to website WIP - Timeline TBD"
+  },
+  {
+    "recipe":"Fro-Yo Bites",
+    "sku":"Tostitos¨ Scoops",
+    "ingredient_1":"Plain Frozen Yogurt",
+    "ingredient_2":"Chocolate Chunk",
+    "link":"http://tostitos.ca/recipes/froyo-bites"
+  },
+  {
+    "recipe":"Tomato Avacado Scoop",
+    "sku":"Tostitos¨ Scoops",
+    "ingredient_1":"Tomato",
+    "ingredient_2":"Avocado",
+    "link":"http://tostitos.ca/recipes/avocado-and-cherry-tomato-multigrain-scoops"
+  },
+  {
+    "recipe":"Buffalo Mozzarella Bites",
+    "sku":"Tostitos¨ Rounds",
+    "ingredient_1":"Tomato",
+    "ingredient_2":"Buffalo Mozzarella Cheese",
+    "link":"http://tostitos.ca/recipes/buffalo-mozzarella-bites"
+  },
+  {
+    "recipe":"Brie & Crann Scoop",
+    "sku":"Tostitos¨ Scoops",
+    "ingredient_1":"Cranberries",
+    "ingredient_2":"Brie Cheese",
+    "link":"http://tostitos.ca/recipes/brie-and-cranberry-bites"
+  },
+  {
+    "recipe":"Grilled Veggie Scoops",
+    "sku":"Tostitos¨ Scoops",
+    "ingredient_1":"Zucchini",
+    "ingredient_2":"Yellow Squash",
+    "link":"http://tostitos.ca/recipes/grilled-veggies-tostitossuprsup-scoopssuprsup"
+  },
+  {
+    "recipe":"Chocolate Bacon Explosion",
+    "sku":"Tostitos¨ Cantina Thick",
+    "ingredient_1":"Chocolate Chunk",
+    "ingredient_2":"Bacon Strips",
+    "link":"Delivery of beauty shot, link to website WIP - Timeline TBD"
+  },
+  {
+    "recipe":"Fancy Grilled Cheese",
+    "sku":"Tostitos¨ Rounds",
+    "ingredient_1":"Green Apple",
+    "ingredient_2":"Cheddar Cheese",
+    "link":"Delivery of beauty shot, link to website WIP - Timeline TBD"
+  },
+  {
+    "recipe":"Tuna Melt",
+    "sku":"Tostitos¨ Restaurant Style",
+    "ingredient_1":"Tuna",
+    "ingredient_2":"Cheddar Cheese",
+    "link":"Delivery of beauty shot, link to website WIP - Timeline TBD"
+  }
+]
+
