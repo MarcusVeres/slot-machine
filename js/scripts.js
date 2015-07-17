@@ -20,7 +20,12 @@
             recipes = data;
             
             // test the function
-            console.log( get_random_recipe());
+            var recipe = get_random_recipe();
+            console.log( recipe );
+
+            // render the random recipe
+            render_recipe( recipe );
+
         });
 
     };
@@ -37,11 +42,19 @@
     };
 
 
+    // render a recipe onto the page
+    var render_recipe = function( recipe )
+    {
+        $('#recipe-container').html( recipe.sku );
+    };
+
+
     // initialize everything before page load
     (function init()
     {
         // populate the recipes variable
         get_recipes();
+
     })();
 
 
