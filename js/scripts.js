@@ -67,6 +67,11 @@
 
         console.log("all systems go");
 
+        // bind the spin button
+        $('#spin').on('tap click', function(){
+            spin();
+        });
+
     });
 
 })($); // import jQuery
