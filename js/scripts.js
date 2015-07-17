@@ -47,15 +47,44 @@
         $('#recipe-sku').html( recipe.sku );
         $('#recipe-ingredient-1').html( recipe.ingredient_1 );
         $('#recipe-ingredient-2').html( recipe.ingredient_2 );
+    };
 
+
+    // append an element to the inside of a slot
+    var append_to_slot = function()
+    {
+        var interval_id = window.setInterval( function(){
+            $('#recipe-sku').append( "<p>hello</p>" );
+        }, 1000);
+    };
+    // append_to_slot();
+
+    
+    // show / hide the blur covers
+    var show_blur_covers = function()
+    {
+        $('.blur-cover').show();
+    };
+
+    var hide_blur_covers = function()
+    {
+        $('.blur-cover').hide();
     };
 
 
     // "spin" the slot machine and display the random recipe
     var spin = function()
     {
+        // overlay the blurring to hide what's going on
+        // need some sort of spinning animation
+        show_blur_covers();
+
+        // prepare our results
         var recipe = get_random_recipe();
         render_recipe( recipe );
+
+        // hide the blur
+        window.setTimeout( hide_blur_covers , 1000 );
     };
 
 
