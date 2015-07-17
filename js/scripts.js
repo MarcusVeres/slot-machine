@@ -38,8 +38,7 @@
     // render a recipe onto the page
     var render_recipe = function( recipe )
     {
-        $('#recipe-container').html( JSON.stringify( recipe ));
-
+        // $('#recipe-container').html( JSON.stringify( recipe ));
         $('#recipe-title').html( recipe.recipe );
         $('#recipe-sku').html( recipe.sku );
         $('#recipe-ingredient-1').html( recipe.ingredient_1 );
@@ -76,7 +75,6 @@
         window.setTimeout( function(){
             $('#recipe-title').css({'opacity':100});
         }, 2000 );
-
     };
 
 
