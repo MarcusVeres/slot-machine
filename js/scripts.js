@@ -19,9 +19,6 @@
             console.log( "the data is:" , data );
             recipes = data;
 
-            // test the data
-            spin();
-
         });
 
     };
@@ -63,11 +60,13 @@
     // show / hide the blur covers
     var show_blur_covers = function()
     {
+        $('#recipe-title').css({'opacity':0});
         $('.blur-cover').show();
     };
 
     var hide_blur_covers = function()
     {
+        $('#recipe-title').css({'opacity':100});
         $('.blur-cover').hide();
     };
 
