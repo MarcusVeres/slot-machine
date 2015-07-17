@@ -41,7 +41,7 @@
     // render a recipe onto the page
     var render_recipe = function( recipe )
     {
-        $('#recipe-container').html( recipe.sku );
+        $('#recipe-container').html( JSON.stringify( recipe ));
     };
 
 
