@@ -42,6 +42,12 @@
     var render_recipe = function( recipe )
     {
         $('#recipe-container').html( JSON.stringify( recipe ));
+
+        $('#recipe-title').html( recipe.recipe );
+        $('#recipe-sku').html( recipe.sku );
+        $('#recipe-ingredient-1').html( recipe.ingredient_1 );
+        $('#recipe-ingredient-2').html( recipe.ingredient_2 );
+
     };
 
 
