@@ -75,7 +75,7 @@
         // stagger the end of the blur
         var covers = $('.blur-cover');
         var items = $('.item');
-        var anim_duration = 300;
+        var anim_duration = 400;
 
         window.setTimeout( function(){ 
             $(covers[0]).hide(); 
@@ -125,7 +125,8 @@
     (function init()
     {
         // set the easing type
-        jQuery.easing.def = "easeOutBounce";
+        // jQuery.easing.def = "easeOutBounce";
+        jQuery.easing.def = "easeOutElastic";
 
         // populate the recipes variable
         get_recipes();
