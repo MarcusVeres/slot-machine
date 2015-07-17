@@ -66,8 +66,17 @@
 
     var hide_blur_covers = function()
     {
-        $('#recipe-title').css({'opacity':100});
-        $('.blur-cover').hide();
+        // stagger the end of the blur
+        var covers = $('.blur-cover');
+        window.setTimeout( function(){ $(covers[0]).hide(); } , 400 );
+        window.setTimeout( function(){ $(covers[1]).hide(); } , 800 );
+        window.setTimeout( function(){ $(covers[2]).hide(); } , 1600 );
+
+        // don't forget the title
+        window.setTimeout( function(){
+            $('#recipe-title').css({'opacity':100});
+        }, 2000 );
+
     };
 
 
