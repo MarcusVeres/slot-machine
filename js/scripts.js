@@ -12,7 +12,7 @@
     {
         $.ajax({
             method: 'GET',
-            url: '/data/recipes.json'
+            url: 'data/recipes.json'
         })
         .success( function( data )
         {
